@@ -1,0 +1,71 @@
+---
+import { SEO } from "astro-seo";
+import Footer from "../components/Footer/index.astro";
+import Navbar from "../components/Navbar.jsx";
+import "../styles.css"
+export interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Rubik:wght@500;600&display=swap" rel="stylesheet">
+    <SEO
+      title={title}
+      titleDefault={"Resume Screener | Home "}
+      description={description}
+      openGraph={{
+        basic: {
+          title: title,
+          type: "website",
+          image: "/HeroSectionScreenshot.jpg",
+          url: "https://linux.tcetmumbai.in",
+        },
+        image: {
+          width: 1200
+        },
+      }}
+      twitter={{
+          title: title,
+          image: "/HeroSectionScreenshot.jpg",
+          card: "summary_large_image",
+          description: description,
+          creator: "@tcetopensource",
+      }}
+      extend={{
+        meta: [
+          {
+            name: "og:image",
+            content: "/mockup.jpg",
+          },
+          {
+            name: "og:image:width",
+            content: "500",
+          },
+        ]
+      }}
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body class="font-sans">
+    <Navbar client:load />
+    <slot />
+    <Footer />
+  </body>
+</html>
