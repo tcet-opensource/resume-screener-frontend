@@ -37,12 +37,7 @@ const para = [
           <p class="pb-8 mr-0 md:mr-10 text-sm md:text-base">{el}</p>
         </div>
       ))}
-      <button
-        class="bg-[#6938EF] w-60 h-12 mt-5 rounded text-white mx-auto lg:mx-0 mb-2"
-        id="btn1"
-      >
-        Get an ATS Resume Test
-      </button>
+      <a href="" class="bg-[#6938EF] w-60 h-12 mt-5 rounded pt-3 text-center text-white mx-auto lg:mx-0 mb-2"> Get an ATS Resume Test</a>
     </div>
   </div>
 
@@ -59,18 +54,16 @@ const para = [
   
 
 <script>
-  function handleClick() {
-    console.log("Button clicked!");
-  }
+
   function handleClick1() {
     console.log("Downloaded")
   }
 
   document.addEventListener("DOMContentLoaded", function() {
     const button = document.getElementById("btn");
-    const button1 = document.getElementById("btn1")
+    
     button.addEventListener("click", handleClick1);
-    button1.addEventListener("click", handleClick);
+ 
   });
 </script>
   
