@@ -5,17 +5,17 @@ const para = [
     "Bonus tip: Use reverse chronological order for your dates. Many applicant tracking systems try to find your most recent work experience and assumes your resume is in reverse chronological order (i.e. most recent first)."
 ]
 ---
-<div class="lg:flex mx-auto lg:mx-0 bg-[#0C1030] px-4 lg:px-16">
-  <div class="text-white flex flex-col pl-4 mt-0 lg:mt-2 sm:pl-20">
+<section class="lg:flex mx-auto justify-between lg:gap-24 lg:mx-0 bg-[#0C1030] px-4 lg:px-16">
+  <div class="text-white flex flex-col lg:w-2/3 mt-0 lg:mt-2 ">
     <h1 class="font-rubik text-5xl pb-12">
       ATS Resume Template
     </h1>
-    <div class="flex flex-col -ml-2 md:ml-0">
+    <div class="flex flex-col  ">
       <p class="pb-8 text-sm sm:text-base md:text-lg">
         Here are the guidelines we outlined above in practice.
       </p>
       {para.map((el) => (
-        <div class="flex flex-row w-[90%] mx-auto ml-10 md:ml-0 lg:w-[662px]">
+        <div class="flex flex-row mx-auto ml-10  ">
           <div class="absolute mt-1 mx-auto -ml-7">
             <svg
               width="18"
@@ -37,20 +37,20 @@ const para = [
           <p class="pb-8 mr-0 md:mr-10 text-sm md:text-base">{el}</p>
         </div>
       ))}
-      <a href="" class="bg-[#6938EF] hover:bg-[#5b41a4] w-fit h-12 mt-5 rounded py-3 px-2 text-center text-white  mb-2"> Get an ATS Resume Test</a>
+      <a href="" class="bg-[#6938EF] hover:bg-[#5b41a4] w-fit  mt-5 rounded py-3 px-2 text-center text-white  mb-2"> Get an ATS Resume Test</a>
     </div>
   </div>
 
-  <div class="mx-auto p-2 lg:order-first">
-    <img src="/Ats_resume/Frame.svg" class="mx-auto" alt="" />
+  <div class=" p-2 lg:order-first lg:w-1/3 ">
+    <img src="/Ats_resume/Frame.svg" width="410" height="546" class="mx-auto w-full " alt="" />
     <button
-      class="w-fit h-12 px-2 rounded bg-[#1D2939] hover:bg-[#1b222a] text-white mt-5 "
+      class="w-fit py-2 px-2 rounded bg-[#1D2939] hover:bg-[#1b222a] text-white mt-5 "
       id="btn"
     >
       Download the Template
     </button>
   </div>
-</div>
+</section>
   
 
 <script>
