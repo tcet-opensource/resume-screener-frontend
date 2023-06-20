@@ -1,0 +1,36 @@
+---
+import data from "./data";
+---
+
+<div class="bg-[#0C1030] w-full h-auto flex flex-col items-center relative ">
+    <div class=" mt-10 z-20">
+        {
+            data.map((ele, index) => (
+                <div key={index} class=" flex flex-col items-center  ">
+                    <div class=" h-28 w-auto  text-white ">
+                        <p class=" p-6 font-rubik font-normal  text-4xl leading-14 text-center">
+                            {ele.heading}
+                        </p>
+                    </div>
+                    <div class=" w-[485px] h-14  text-white">
+                        <p class=" text-[#D0D5DD] font-normal text-base leading-7 text-center">{ele.description}</p>
+                    </div>
+                </div>
+            ))
+        }
+        <div class=" flex flex-row text-white  items-center justify-center gap-6 mt-4">
+            <div class=" bg-[#6938EF] inline-flex items-center justify-center w-60 h-11  rounded-md  px-8 py-4 text-base font-bold leading-6 text-white  border border-transparent  md:w-auto hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600">
+                <button class="">Resumer Screener tool</button>
+            </div>
+            <div class=" bg-[#FFFFFF29] w-32 h-11 flex items-center justify-center rounded-md ">
+                <button>Contribute</button>
+            </div>
+        </div>
+        <div class=" border-[12px] border-[#212556] mt-16 lg:w-full md:w-full w-screen  ">
+            <img src="/public/Hero-section/image.png" alt="heroSection" class=" border-8 border-[#FFFFFF] ">
+        </div>
+    </div>
+    <img src="/public/Hero-section/right.svg" class=" absolute right-0 z-10" alt="" >
+    <img src="/public/Hero-section/left.svg" class="absolute left-0 z-10" alt="" > 
+</div>
+
