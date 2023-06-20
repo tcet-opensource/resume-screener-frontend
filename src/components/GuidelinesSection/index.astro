@@ -29,28 +29,29 @@ type Guidelines = {
   ];
 ---
 
-<div class = "h-screen px-5 md:py-[48px] sm:px-[41px] flex flex-col bg-no-repeat bg-right-bottom object-cover w-full" style="background-image: url(../GuidelinesSection/Group1.svg); background-color: #0C1030;">
+<section class = " px-4 lg:px-16  flex flex-col bg-no-repeat bg-right-bottom object-cover w-full" style="background-image: url(../GuidelinesSection/Group1.svg); background-color: #0C1030;">
     <div>
-        <p class="text-white text-center text-4xl font-inter tracking-tight	font-semibold">How do I Make sure my resume is <br>ATS-compliant?
+      <p class="text-white text-center text-4xl font-rubik tracking-tight	font-semibold">How do I Make sure my resume is <br>ATS-compliant?
         </p>
     </div>
     <div>
-        <p class="text-white text-center text-xl font-inter mt-10 font-light">Here are some guidelines you should follow to ensure your <br> resume gets correctly scanned by all applicant tracking<br> systems.</p>
+        <p class="text-white text-center text-xl  mt-10 font-light">Here are some guidelines you should follow to ensure your <br> resume gets correctly scanned by all applicant tracking<br> systems.</p>
     </div>
-    <div class="border-box flex flex-col justify-center self-center lg:w-3/4 xl:w-2/3 md:py-[1px] sm:px-[41px] flex-grow rounded-md border border-slate-700 mt-6 pt-4 gap-3"
-    style="background: linear-gradient(145.2deg, rgba(255, 255, 255, 0.065) 13.28%, rgba(255, 255, 255, 0.1) 87.52%);">
+    <!-- <div class="border-box flex flex-col bg-opacity-80 justify-center self-center flex-grow rounded-md border border-slate-700 mt-6 pt-4 gap-3"> -->
   
-        <div class="border-box flex flex-col items-center justify-between self-center md:flex">
-          <div class="flex flex-col mt-3">
+        <!-- <div class="border-box flex flex-col items-center justify-between self-center md:flex"> -->
+          <div class="flex flex-col mt-3 px-6 py-4  gap-3 md:px-16 md:py-14 md:w-2/4 mx-auto border border-[#4B4848] rounded-lg "
+          style="background: linear-gradient(145.2deg, rgba(255, 255, 255, 0.065) 13.28%, rgba(255, 255, 255, 0.1) 87.52%);"
+          >
             {
               accordions.map(({ title, data, open }) => (
-                <details open={open} class="border-box rounded-sm mb-3 p-1" style="background: linear-gradient(116.05deg, rgba(255, 255, 255, 0.25) 21.76%, rgba(255, 255, 255, 0.0875) 119.92%);">
-                  <summary class="active:text-softRed group-open:text-veryDarkDesaturatedBlue flex items-center justify-between group-open:pb-[1.1rem] group-open:font-bold text-white p-3 px-6 w-[780px] font-inter text-sm">
+                <details open={open} class="border-box rounded-sm p-1 group " style="background: linear-gradient(116.05deg, rgba(255, 255, 255, 0.25) 21.76%, rgba(255, 255, 255, 0.0875) 119.92%);">
+                  <summary class="flex items-center justify-between  text-white p-3 px-6  text-sm ">
                     {title}
-                    <img src="../GuidelinesSection/Icon.svg" alt="Down arrow" class="h-4 w-4"/>
+                    {<img src="../GuidelinesSection/Icon.svg" alt="Down arrow" class="h-4 w-4  group-open:rotate-180 "/>}
                   </summary>
                   <div class="p-4">
-                  <p class="text-white box-content w-[499px] h-[63px] font-inter text-sm ">
+                  <p class="text-white box-content font-inter text-sm ">
                     {data}
                   </p>
                   </div>
@@ -58,9 +59,9 @@ type Guidelines = {
               ))
             }
           </div>
-        </div>
+        <!-- </div> -->
      
-  <script>
+  <!-- <script>
     const details = document.querySelectorAll("details");
 
   details.forEach((targetDetail) => {
@@ -81,4 +82,4 @@ type Guidelines = {
     }
   });
 });
-  </script>
+  </script> -->
