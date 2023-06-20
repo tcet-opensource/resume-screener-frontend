@@ -29,57 +29,6 @@ type Guidelines = {
   ];
 ---
 
-<style>
-  summary::-webkit-details-marker {
-    display: none;
-  }
-
-  @media (max-width: 768px) {
-    .border-box {
-      flex-direction: column;
-    }
-
-    .flex-grow {
-      flex-grow: 1;
-    }
-
-    .border-box > div {
-      width: 100%;
-    }
-  }
-
-  .details .summary {
-    position: relative;
-  }
-
-  .details .summary img {
-    position: absolute;
-    top: 50%;
-    right: 16px;
-    transform: translateY(-50%);
-    z-index: 1;
-  }
-
-  .details .summary img {
-    max-width: 100%;
-  }
-
-  @media (max-width: 640px) {
-    .details .summary {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .details .summary img {
-      display: none;
-    }
-  }
-</style>
-
-
-
-
 <div class = "h-screen px-5 md:py-[48px] sm:px-[41px] flex flex-col bg-no-repeat bg-right-bottom object-cover w-full" style="background-image: url(../GuidelinesSection/Group1.svg); background-color: #0C1030;">
     <div>
         <p class="text-white text-center text-4xl font-inter tracking-tight	font-semibold">How do I Make sure my resume is <br>ATS-compliant?
