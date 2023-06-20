@@ -3,18 +3,29 @@ import { FaBars, FaTimes } from "react-icons/fa";
 
 const navlinks = [
   {
-    title: "Download",
-    link: "/#download",
-  },
-  {
-    title: "Documentation",
-    link: "https://opensource.tcetmumbai.in/docs/projects/tcet-linux/about-tcet-linux",
-    newtab: true,
+    title: "Home",
+    link: "/#Home",
   },
   {
     title: "About Us",
-    link: "https://opensource.tcetmumbai.in/docs/about-tcetopensource",
-    newtab: true,
+    link: "/#AboutUs",
+    // newtab: true,
+  },
+  {
+    title: "Suggestions",
+    link: "/#Suggestions",
+    // newtab: true,
+  },
+  {
+    title: "Template",
+    link: "/#Template",
+    // newtab: true,
+  },
+  {
+    title: "Features",
+    link: "/#Features",
+    // link: "https://opensource.tcetmumbai.in/docs/projects/tcet-linux/about-tcet-linux",
+    // newtab: true,
   },
 ];
 
@@ -35,10 +46,9 @@ const Navbar = () => {
             style={{
               background:
                 "linear-gradient(218.92deg, rgba(255, 255, 255, 0.25) 30.2%, rgba(255, 255, 255, 0) 105.59%);",
-              backdrop: "blur(4px);",
-              overflow:"hidden;",
+              backdrop: "blur(4px);"
             }}>
-            <img src="/Footer/logo.png" alt="" class="h-[49px] pl-1" />
+            <img src="/Footer/logo.png" alt="" class="h-[48px] p-1" />
             <a href="/" className="text-white">
               
               <h2 class="text-white font-{400} text-base pr-2.5">
