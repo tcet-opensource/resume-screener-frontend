@@ -28,19 +28,20 @@ const Navbar = () => {
   return (
     <div className="bg-[#0C1030] font-sans">
       <div className="mx-auto  px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 pl-4">
+        <div className="flex items-center justify-between h-16 pl-4 ">
           {/* Logo */}
           <div
-            class="flex items-center gap-3 rounded-full "
+            class="flex items-center gap-3 rounded-full border-2 border-white border-opacity-25"
             style={{
               background:
                 "linear-gradient(218.92deg, rgba(255, 255, 255, 0.25) 30.2%, rgba(255, 255, 255, 0) 105.59%);",
               backdrop: "blur(4px);",
+              overflow:"hidden;",
             }}>
-            <img src="/tcet-opensource-logo.png" alt="" class="h-[49px] pl-1" />
+            <img src="/Footer/logo.png" alt="" class="h-[49px] pl-1" />
             <a href="/" className="text-white">
               
-              <h2 class="text-white font-semibold text-base pr-2.5">
+              <h2 class="text-white font-{400} text-base pr-2.5">
                 Resume screener
               </h2>
             </a>
