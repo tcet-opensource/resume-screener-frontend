@@ -1,0 +1,135 @@
+---
+type Guidelines = {
+  title: string;
+  data: string;
+  open?: boolean;
+};
+
+ const accordions: Guidelines[] =[
+    {
+      title:"Avoid using tables",
+      data : "Label your work experience and education sections with conventional section titles"
+    },
+    {
+      title:"Make use of standard fonts",
+      data : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
+    },
+    {
+      title:"Single-column layouts",
+      data : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
+    },
+    {
+      title:"Avoid using tables",
+      data : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
+    },
+    {
+      title:"No scanned documents, pictures or diagrams",
+      data : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
+    },
+  ];
+---
+
+<style>
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    .border-box {
+      flex-direction: column;
+    }
+
+    .flex-grow {
+      flex-grow: 1;
+    }
+
+    .border-box > div {
+      width: 100%;
+    }
+  }
+
+  .details .summary {
+    position: relative;
+  }
+
+  .details .summary img {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+
+  .details .summary img {
+    max-width: 100%;
+  }
+
+  @media (max-width: 640px) {
+    .details .summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .details .summary img {
+      display: none;
+    }
+  }
+</style>
+
+
+
+
+<div class = "h-screen px-5 md:py-[48px] sm:px-[41px] flex flex-col bg-no-repeat bg-right-bottom object-cover w-full" style="background-image: url(../GuidelinesSection/Group1.svg); background-color: #0C1030;">
+    <div>
+        <p class="text-white text-center text-4xl font-inter tracking-tight	font-semibold">How do I Make sure my resume is <br>ATS-compliant?
+        </p>
+    </div>
+    <div>
+        <p class="text-white text-center text-xl font-inter mt-10 font-light">Here are some guidelines you should follow to ensure your <br> resume gets correctly scanned by all applicant tracking<br> systems.</p>
+    </div>
+    <div class="border-box flex flex-col justify-center self-center lg:w-3/4 xl:w-2/3 md:py-[1px] sm:px-[41px] flex-grow rounded-md border border-slate-700 mt-6 pt-4 gap-3"
+    style="background: linear-gradient(145.2deg, rgba(255, 255, 255, 0.065) 13.28%, rgba(255, 255, 255, 0.1) 87.52%);">
+  
+        <div class="border-box flex flex-col items-center justify-between self-center md:flex">
+          <div class="flex flex-col mt-3">
+            {
+              accordions.map(({ title, data, open }) => (
+                <details open={open} class="border-box rounded-sm mb-3 p-1" style="background: linear-gradient(116.05deg, rgba(255, 255, 255, 0.25) 21.76%, rgba(255, 255, 255, 0.0875) 119.92%);">
+                  <summary class="active:text-softRed group-open:text-veryDarkDesaturatedBlue flex items-center justify-between group-open:pb-[1.1rem] group-open:font-bold text-white p-3 px-6 w-[780px] font-inter text-sm">
+                    {title}
+                    <img src="../GuidelinesSection/Icon.svg" alt="Down arrow" class="h-4 w-4"/>
+                  </summary>
+                  <div class="p-4">
+                  <p class="text-white box-content w-[499px] h-[63px] font-inter text-sm ">
+                    {data}
+                  </p>
+                  </div>
+                </details>
+              ))
+            }
+          </div>
+        </div>
+     
+  <script>
+    const details = document.querySelectorAll("details");
+
+  details.forEach((targetDetail) => {
+  const summary = targetDetail.querySelector("summary");
+  const arrowIcon = summary.querySelector("img");
+
+  summary.addEventListener("click", function () {
+    details.forEach((detail) => {
+      if (detail !== targetDetail) {
+        detail.open = false;
+      }
+    });
+
+    if (targetDetail.open) {
+      arrowIcon.classList.add("rotate-0");
+    } else {
+      arrowIcon.classList.remove("rotate-180");
+    }
+  });
+});
+  </script>
