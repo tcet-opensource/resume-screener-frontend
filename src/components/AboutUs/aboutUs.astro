@@ -4,16 +4,16 @@ import aboutUsImg from "/AboutUs/about-us.svg"
 import arrow from "/AboutUs/arrow-icon.svg"
 ---
 
-<div class="w-full bg-[#0C1030] box-border flex justify-between flex-col md:flex-col lg:flex-row xl:flex-row">
-    <div class=" w-full flex align-center p-4 md:p-20 lg:p-16 lg:w-1/2 xl:w-1/2">
+<section class="w-full bg-[#0C1030] box-border flex justify-between gap-6 lg:gap-12  flex-col lg:flex-row p-4 lg:p-16 ">
+    <div class=" w-full flex align-center lg:w-1/2 ">
         <img src = {aboutUsImg} alt="about-us" class="w-full"/>
     </div>
-    <div class=" w-full flex flex-col items-start pt-16 pb-16 pr-16 pl-12 gap-8 lg:w-1/2 xl:w-1/2">
-        <span class="text-5xl font-semibold leading-14 text-[#FCFCFD] ">About US</span>
-        <span class="text-lg font-normal leading-7 text-[#D0D5DD]">
+    <div class=" w-full flex flex-col items-start   gap-2 lg:gap-6 lg:w-1/2 xl:w-1/2">
+        <span class=" text-4xl md:text-5xl font-semibold leading-14 text-[#FCFCFD] ">About Us</span>
+        <span class="md:text-lg font-normal leading-7 text-[#D0D5DD]">
             Our free resume scanner ensures that your resume is ATS compliant and will be read correctly by Applicant Tracking Systems (ATS) and resume screening software. It provides detailed feedback on key criteria important to recruiters and hiring managers. Maximize your chances of getting noticed by using our resume scanner today. Don't let your resume be overlooked - get valuable insights and make a strong impression with our ATS compliance evaluation.
         </span>
-        <button class="w-52 h-11 flex flex-row align-start px-4 py-2.5 gap-1.5 bg-[#6938EF] text-[#FFFFFF] rounded">Start Resume Test
+        <button class=" flex flex-row align-start px-4 py-2.5 gap-1.5 bg-[#6938EF] hover:bg-[#3708b7] transition-colors text-[#FFFFFF] rounded">Start Resume Test
             <img src={arrow} class="p-1"></img>
         </button>
     </div>
