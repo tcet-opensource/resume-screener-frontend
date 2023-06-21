@@ -1,10 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Ats from '../components/Ats_resume/index.astro';
+import AboutUs from '../components/AboutUs/aboutUs.astro'
+import GuidelinesSection from '../components/GuidelinesSection/index.astro';
 ---
 
 <Layout title="Resume Screener" description='Resume Screener' >
 	<main>
+		<AboutUs />
+		<GuidelinesSection />
 		<Ats />
 	</main>
 </Layout>
