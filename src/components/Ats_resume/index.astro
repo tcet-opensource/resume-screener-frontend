@@ -71,7 +71,6 @@ const para = [
   document.addEventListener("DOMContentLoaded", function() {
     const button = document.getElementById("btn");
     
-    button.addEventListener("click", handleClick1);
- 
+    button && button.addEventListener("click", handleClick1);
   });
 </script>

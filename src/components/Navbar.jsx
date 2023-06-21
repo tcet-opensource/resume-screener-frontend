@@ -42,16 +42,16 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16 pl-4 ">
           {/* Logo */}
           <div
-            class="flex items-center gap-3 rounded-full border-2 border-white border-opacity-25"
+            className="flex items-center gap-3 rounded-full border-2 border-white border-opacity-25"
             style={{
               background:
-                "linear-gradient(218.92deg, rgba(255, 255, 255, 0.25) 30.2%, rgba(255, 255, 255, 0) 105.59%);",
-              backdrop: "blur(4px);"
+                "linear-gradient(218.92deg, rgba(255, 255, 255, 0.25) 30.2%, rgba(255, 255, 255, 0) 105.59%)",
+              backdrop: "blur(4px)"
             }}>
-            <img src="/Footer/logo.png" alt="" class="h-[48px] p-1" />
+            <img src="/Footer/logo.png" alt="" className="h-[48px] p-1" />
             <a href="/" className="text-white">
               
-              <h2 class="text-white font-{400} text-base pr-2.5">
+              <h2 className="text-white font-{400} text-base pr-2.5">
                 Resume screener
               </h2>
             </a>
