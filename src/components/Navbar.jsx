@@ -38,7 +38,7 @@ const Navbar = () => {
   };
   return (
     <div className="bg-[#0C1030] font-sans">
-      <div className="mx-auto  px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto  p-4  lg:p-8">
         <div className="flex items-center justify-between h-16 pl-4 ">
           {/* Logo */}
           <div
