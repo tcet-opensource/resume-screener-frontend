@@ -21,18 +21,16 @@ const card = [
 ]
 ---
 
-<section class="my-5 grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-3 px-4 sm:px-8 md:px-12 lg:px-16 gap-8 sm:gap-10 md:gap-14 lg:gap-16">
+<section class="py-5 px-4 sm:px-8 md:px-12 lg:px-16 flex flex-col sm:flex-row flex-wrap items-stretch gap-8 sm:gap-10 md:gap-14 lg:gap-16">
     { card.map(item => (
-            <div class="pt-7 pb-4 px-5 flex flex-col col-span-1 sm:max-lg:col-span-2 sm:max-lg:last:col-start-2 bg-[#24294D] rounded-2xl">
+            <div class=" px-5 pt-7 pb-4 bg-[#24294D] flex-1 sm:basis-1/3 lg:basis-1/4 flex flex-col rounded-2xl gap-3">
                 <img 
                     src={`/CardSection/${item.cardImg}`} alt={item.cardAlt}
-                    class="ml-3 mb-5 w-max object-center h-16 sm:h-20 md:h-24 object-cover select-none"
+                    class="px-2 pb-3 w-max h-16 sm:h-20 md:h-24 object-cover object-center select-none "
                 />
 
-                <div class="flex flex-col justify-between h-[calc(100%-25%)] space-y-2">
-                    <h1 class="inline-block font-rubik text-white font-bold text-2xl sm:text-3xl">{item.cardTitle}</h1>
-                    <p class="font-sans font-normal text-gray-300 text-sm sm:text-base">{item.cardText}</p>
-                </div>
+                <h1 class="font-rubik text-white font-bold text-2xl sm:text-3xl">{item.cardTitle}</h1>
+                <p class="block font-sans font-normal mt-auto text-gray-300 text-sm sm:text-base">{item.cardText}</p>
             </div>
         )) }
 </section>
