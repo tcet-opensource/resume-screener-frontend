@@ -8,14 +8,14 @@ const navlinks = [
   },
   {
     title: "About Us",
-    link: "/#AboutUs",
-    // newtab: true,
+    link: "https://opensource.tcetmumbai.in/docs/about-tcetopensource",
+    newtab: true,
   },
-  {
-    title: "Suggestions",
-    link: "/#Suggestions",
-    // newtab: true,
-  },
+  // {
+  //   title: "Suggestions",
+  //   link: "/#Suggestions",
+  //   // newtab: true,
+  // },
   {
     title: "Template",
     link: "/#Template",
