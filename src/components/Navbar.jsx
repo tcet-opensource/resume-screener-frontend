@@ -18,8 +18,8 @@ const navlinks = [
   // },
   {
     title: "Template",
-    link: "/#Template",
-    // newtab: true,
+    link: "https://drive.google.com/file/d/1B8GQfwNDrbeSp5FnU8lrQaWFD7efUL3t/view",
+    newtab: true,
   },
   {
     title: "Features",
