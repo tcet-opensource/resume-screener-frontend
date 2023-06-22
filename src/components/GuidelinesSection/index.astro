@@ -1,0 +1,58 @@
+---
+type Guidelines = {
+  title: string;
+  data: string;
+  open?: boolean;
+};
+
+const accordions: Guidelines[] =[
+    {
+      title:"Avoid using tables",
+      data : "Label your work experience and education sections with conventional section titles"
+    },
+    {
+      title:"Make use of standard fonts",
+      data : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
+    },
+    {
+      title:"Single-column layouts",
+      data : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
+    },
+    {
+      title:"Avoid using tables",
+      data : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
+    },
+    {
+      title:"No scanned documents, pictures or diagrams",
+      data : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
+    },
+  ];
+---
+
+<section class = " p-4 lg:p-16  flex flex-col bg-no-repeat bg-right-bottom object-cover w-full" style="background-image: url(../GuidelinesSection/Group1.svg);  background-color: #0C1030;">
+    <div class="text-white text-center">
+      <p class="text-2xl sm:text-4xl font-rubik tracking-tight font-semibold">How do I Make sure my resume is <br>ATS-compliant?
+        </p>
+        <p class="text-md sm:text-lg font-light mt-2">Here are some guidelines you should follow to ensure your <br> resume gets correctly scanned by all applicant tracking<br> systems.</p>
+    </div>
+          <div class="flex flex-col mt-8 px-6 py-4  gap-3 md:px-16 md:py-14 md:w-2/4 mx-auto border border-[#4B4848] rounded-lg "
+          style="background:linear-gradient(145.2deg, rgba(255, 255, 255, 0.065) 13.28%, rgba(255, 255, 255, 0.1) 87.52%);"
+          >
+            {
+              accordions.map(({ title, data, open }) => (
+                <details open={open} class="border-box rounded-md p-1 group border border-[#667085]" style="background: linear-gradient(116.05deg, rgba(255, 255, 255, 0.25) 21.76%, rgba(255, 255, 255, 0.0875) 119.92%);">
+                  <summary class="flex items-center justify-between  text-white p-3 px-6 text-sm">
+                    {title}
+                    {<img src="../GuidelinesSection/Icon.svg" alt="Down arrow" class="h-4 w-4  group-open:rotate-180 "/>}
+                  </summary>
+                  <div class="p-4">
+                  <p class="text-white box-content font-inter text-sm ">
+                    {data}
+                  </p>
+                  </div>
+                </details>
+              ))
+            }
+          </div>
+</section>          
+ 
