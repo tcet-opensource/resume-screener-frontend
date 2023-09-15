@@ -1,40 +1,72 @@
-# Resume Screener Frontend
+# TCET - Resume Screener Website 
 
-## 🚀 Project Structure
+**Note: The TCET Resume Screener page is built using AstroJS, an all-in-one web framework designed for speed.**
 
-Inside of your Astro project, you'll see the following folders and files:
+### Steps to run the site on your local system: 
+These are the steps you need to follow to get this site on your local system.
 
+### Install Git in your computer
+Follow these steps to install git in your computer.
+1. Go to [https://git-scm.com/downloads](https://git-scm.com/downloads).
+2. Click on Windows. Download should start.
+3. Go to downloads and install the package.
+
+### Clone the repo
+Open Git Bash in any folder and paste the following command
+
+```bash
+git clone https://github.com/tcet-opensource/resume-screener-frontend.git
 ```
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+
+### Install NodeJs
+
+1. Go to [https://nodejs.org/en/download](https://nodejs.org/en/download)
+2. Select <b>Current</b>.
+3. Download the 64-bit .msi version. Follow the steps and install NodeJS.
+
+
+**Note: It is important to have NodeJS in your system**
+
+
+### Open the folder in VS Code
+1. Install [VS Code](https://code.visualstudio.com/docs/?dv=win32user) if not installed. 
+2. Open Windows Terminal in the folder you have cloned the repo, as done in [step 2](#clone-the-repo).
+
+### Install Important Packages/Dependencies
+
+Install yarn globally 
+
+```bash
+npm install -g yarn
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+You can make changes to your respective files and changes will be shown once you have saved the file.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+### Commands used to run locally 
 
-Any static assets, like images, can be placed in the `public/` directory.
+1. To run the commands, make sure that you have installed yarn globally first.
+2. All commands are run from the root of the project, from a terminal
 
-## 🧞 Commands
+Here are a set of commands used to run locally:
 
-All commands are run from the root of the project, from a terminal:
+| **Command** | **Action** |
+| -------- | -------- |
+| `yarn`   | Installs dependencies |
+| `yarn dev` | Starts local dev server at `localhost:3000` |
+| `yarn build` | Build your production site to `./dist/` |
+| `yarn preview` | Preview your build locally, before deploying |
+| `yarn astro ...` | Run CLI commands like `astro add`, `astro check` |
+| `yarn astro --help` | Get help using the Astro CLI |
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:3000`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+### Steps to run after a Pull / Merge: 
 
+1. To install all dependencies
 
+```bash
+yarn
+```
+2. To run local dev environment
+
+```bash
+yarn dev
+```
