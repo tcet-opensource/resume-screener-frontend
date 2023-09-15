@@ -8,18 +8,18 @@ const navlinks = [
   },
   {
     title: "About Us",
-    link: "/#AboutUs",
-    // newtab: true,
+    link: "https://opensource.tcetmumbai.in/docs/about-tcetopensource",
+    newtab: true,
   },
-  {
-    title: "Suggestions",
-    link: "/#Suggestions",
-    // newtab: true,
-  },
+  // {
+  //   title: "Suggestions",
+  //   link: "/#Suggestions",
+  //   // newtab: true,
+  // },
   {
     title: "Template",
-    link: "/#Template",
-    // newtab: true,
+    link: "https://drive.google.com/file/d/1B8GQfwNDrbeSp5FnU8lrQaWFD7efUL3t/view",
+    newtab: true,
   },
   {
     title: "Features",
